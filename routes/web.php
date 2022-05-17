@@ -31,8 +31,9 @@ Route::get('/hello/{name}', function ($name) {
 });
 
 Route::controller(EditorialesController::class)->group(function(){
-    Route::get('/editoriales/index','index');
-    Route::get('/editoriales/create','create');
+    Route::get('/editoriales/index','index')->name('editoriales.index');
+    Route::get('/editoriales/create','create')->name('editoriales.create');
+    Route::post('/editoriales','store')->name('editoriales.store');
     Route::get('/editoriales/edit/{id}','edit');
 });
 

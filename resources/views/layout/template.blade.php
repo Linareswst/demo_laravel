@@ -65,8 +65,8 @@
                    role="button" aria-haspopup="true" 
                    aria-expanded="false">Editoriales<span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                    <li><a href="#">Registrar editorial</a></li>
-                  <li><a href="#">Ver lista de editoriales</a></li>
+                    <li><a href="{{route('editoriales.create')}}">Registrar editorial</a></li>
+                  <li><a href="{{route('editoriales.index')}}">Ver lista de editoriales</a></li>
                 </ul>
               </li>
             </ul>
